@@ -21,7 +21,7 @@ public class BaseTest implements IAutoConst{
 	{
 		WebDriverManager.chromedriver().setup();
 	}
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void openApp() {
 		softAssert=new SoftAssert();
 		
@@ -41,7 +41,7 @@ public class BaseTest implements IAutoConst{
 
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void closeApp() {
 		Reporter.log("Closing the Browser",true);
 		driver.quit();
