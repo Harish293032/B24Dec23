@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Using the Local System;Browser:chrome]]>
+    </line>
+    <line>
+      <![CDATA[Setting ETO:8]]>
+    </line>
+    <line>
+      <![CDATA[XL Data:]]>
+    </line>
+    <line>
+      <![CDATA[Demo test]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser]]>
+    </line>
+    <line>
+      <![CDATA[Using the Local System;Browser:chrome]]>
+    </line>
+    <line>
+      <![CDATA[Setting ETO:8]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser]]>
+    </line>
+    <line>
+      <![CDATA[Using the Local System;Browser:chrome]]>
+    </line>
+    <line>
+      <![CDATA[Setting ETO:8]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser]]>
+    </line>
+    <line>
+      <![CDATA[Using the Local System;Browser:firefox]]>
+    </line>
+    <line>
+      <![CDATA[Setting ETO:8]]>
+    </line>
+    <line>
+      <![CDATA[XL Data:]]>
+    </line>
+    <line>
+      <![CDATA[Demo test]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser]]>
+    </line>
+    <line>
+      <![CDATA[Using the Local System;Browser:firefox]]>
+    </line>
+    <line>
+      <![CDATA[Setting ETO:8]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser]]>
+    </line>
+    <line>
+      <![CDATA[Using the Local System;Browser:firefox]]>
+    </line>
     <line>
       <![CDATA[Setting ETO:8]]>
     </line>
@@ -8,26 +68,58 @@
       <![CDATA[Closing the Browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-12-24T07:59:11 IST" name="Default suite" finished-at="2021-12-24T08:00:05 IST" duration-ms="54390">
+  <suite started-at="2021-12-24T14:48:10 IST" name="Suite" finished-at="2021-12-24T14:51:48 IST" duration-ms="217859">
     <groups>
+      <group name="smoke">
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:scripts.ValidLogin@64040287]" name="testValidLogin" class="scripts.ValidLogin"/>
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:scripts.ValidLogin@4fe01805]" name="testValidLogin" class="scripts.ValidLogin"/>
+      </group> <!-- smoke -->
       <group name="login">
-        <method signature="InvalidLogin.testInvalidLogin()[pri:2, instance:scripts.InvalidLogin@2b52c0d6]" name="testInvalidLogin" class="scripts.InvalidLogin"/>
+        <method signature="InvalidLogin.testInvalidLogin()[pri:2, instance:scripts.InvalidLogin@24e8de5c]" name="testInvalidLogin" class="scripts.InvalidLogin"/>
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:scripts.ValidLogin@64040287]" name="testValidLogin" class="scripts.ValidLogin"/>
+        <method signature="InvalidLogin.testInvalidLogin()[pri:2, instance:scripts.InvalidLogin@5652f555]" name="testInvalidLogin" class="scripts.InvalidLogin"/>
+        <method signature="ValidLogin.testValidLogin()[pri:1, instance:scripts.ValidLogin@4fe01805]" name="testValidLogin" class="scripts.ValidLogin"/>
       </group> <!-- login -->
     </groups>
-    <test started-at="2021-12-24T07:59:11 IST" name="Default test" finished-at="2021-12-24T08:00:05 IST" duration-ms="54390">
+    <test started-at="2021-12-24T14:48:10 IST" name="TestGC" finished-at="2021-12-24T14:50:14 IST" duration-ms="124149">
       <class name="scripts.InvalidLogin">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:scripts.InvalidLogin@2b52c0d6]" started-at="2021-12-24T07:59:11 IST" name="openApp" finished-at="2021-12-24T07:59:56 IST" duration-ms="44532" status="PASS">
+        <test-method is-config="true" signature="openApp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.InvalidLogin@24e8de5c]" started-at="2021-12-24T14:49:04 IST" name="openApp" finished-at="2021-12-24T14:49:27 IST" duration-ms="23952" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[input_qa.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Using the Local System;Browser:chrome]]>
+            </line>
             <line>
               <![CDATA[Setting ETO:8]]>
             </line>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="testInvalidLogin()[pri:2, instance:scripts.InvalidLogin@2b52c0d6]" started-at="2021-12-24T07:59:56 IST" name="testInvalidLogin" finished-at="2021-12-24T08:00:03 IST" duration-ms="6910" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:2, instance:scripts.InvalidLogin@24e8de5c]" started-at="2021-12-24T14:49:27 IST" name="testInvalidLogin" finished-at="2021-12-24T14:49:36 IST" duration-ms="8166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.InvalidLogin@2b52c0d6]" started-at="2021-12-24T08:00:03 IST" name="closeApp" finished-at="2021-12-24T08:00:05 IST" duration-ms="2725" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.InvalidLogin@24e8de5c]" started-at="2021-12-24T14:49:36 IST" name="closeApp" finished-at="2021-12-24T14:49:38 IST" duration-ms="2596" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing the Browser]]>
@@ -35,6 +127,245 @@
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- scripts.InvalidLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="scripts.Demo">
+        <test-method is-config="true" signature="openApp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.Demo@1500e009]" started-at="2021-12-24T14:48:10 IST" name="openApp" finished-at="2021-12-24T14:49:00 IST" duration-ms="49759" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[input_qa.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Using the Local System;Browser:chrome]]>
+            </line>
+            <line>
+              <![CDATA[Setting ETO:8]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="testA()[pri:0, instance:scripts.Demo@1500e009]" started-at="2021-12-24T14:49:00 IST" name="testA" finished-at="2021-12-24T14:49:00 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[XL Data:]]>
+            </line>
+            <line>
+              <![CDATA[Demo test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.Demo@1500e009]" started-at="2021-12-24T14:49:00 IST" name="closeApp" finished-at="2021-12-24T14:49:04 IST" duration-ms="3526" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.Demo -->
+      <class name="scripts.ValidLogin">
+        <test-method is-config="true" signature="openApp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.ValidLogin@64040287]" started-at="2021-12-24T14:49:38 IST" name="openApp" finished-at="2021-12-24T14:50:00 IST" duration-ms="22141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[input_qa.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Using the Local System;Browser:chrome]]>
+            </line>
+            <line>
+              <![CDATA[Setting ETO:8]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="testValidLogin()[pri:1, instance:scripts.ValidLogin@64040287]" started-at="2021-12-24T14:50:00 IST" name="testValidLogin" finished-at="2021-12-24T14:50:06 IST" duration-ms="5962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.ValidLogin@64040287]" started-at="2021-12-24T14:50:06 IST" name="closeApp" finished-at="2021-12-24T14:50:14 IST" duration-ms="7756" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.ValidLogin -->
+    </test> <!-- TestGC -->
+    <test started-at="2021-12-24T14:50:14 IST" name="TestMFF" finished-at="2021-12-24T14:51:48 IST" duration-ms="93644">
+      <class name="scripts.InvalidLogin">
+        <test-method is-config="true" signature="openApp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.InvalidLogin@5652f555]" started-at="2021-12-24T14:50:41 IST" name="openApp" finished-at="2021-12-24T14:51:08 IST" duration-ms="26821" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[input_stg1.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Using the Local System;Browser:firefox]]>
+            </line>
+            <line>
+              <![CDATA[Setting ETO:8]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="testInvalidLogin()[pri:2, instance:scripts.InvalidLogin@5652f555]" started-at="2021-12-24T14:51:08 IST" name="testInvalidLogin" finished-at="2021-12-24T14:51:12 IST" duration-ms="3876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.InvalidLogin@5652f555]" started-at="2021-12-24T14:51:12 IST" name="closeApp" finished-at="2021-12-24T14:51:15 IST" duration-ms="2495" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.InvalidLogin -->
+      <class name="scripts.Demo">
+        <test-method is-config="true" signature="openApp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.Demo@502f8b57]" started-at="2021-12-24T14:50:14 IST" name="openApp" finished-at="2021-12-24T14:50:37 IST" duration-ms="23115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[input_stg1.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Using the Local System;Browser:firefox]]>
+            </line>
+            <line>
+              <![CDATA[Setting ETO:8]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="testA()[pri:0, instance:scripts.Demo@502f8b57]" started-at="2021-12-24T14:50:37 IST" name="testA" finished-at="2021-12-24T14:50:37 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[XL Data:]]>
+            </line>
+            <line>
+              <![CDATA[Demo test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.Demo@502f8b57]" started-at="2021-12-24T14:50:37 IST" name="closeApp" finished-at="2021-12-24T14:50:41 IST" duration-ms="3979" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.Demo -->
+      <class name="scripts.ValidLogin">
+        <test-method is-config="true" signature="openApp(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:scripts.ValidLogin@4fe01805]" started-at="2021-12-24T14:51:15 IST" name="openApp" finished-at="2021-12-24T14:51:37 IST" duration-ms="22233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[input_stg1.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[no]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Using the Local System;Browser:firefox]]>
+            </line>
+            <line>
+              <![CDATA[Setting ETO:8]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="testValidLogin()[pri:1, instance:scripts.ValidLogin@4fe01805]" started-at="2021-12-24T14:51:37 IST" name="testValidLogin" finished-at="2021-12-24T14:51:43 IST" duration-ms="6146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:scripts.ValidLogin@4fe01805]" started-at="2021-12-24T14:51:43 IST" name="closeApp" finished-at="2021-12-24T14:51:48 IST" duration-ms="4930" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- scripts.ValidLogin -->
+    </test> <!-- TestMFF -->
+  </suite> <!-- Suite -->
 </testng-results>

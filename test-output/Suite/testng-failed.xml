@@ -3,20 +3,13 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="scripts.Demo">
+      <class name="scripts.InvalidLogin">
         <methods>
           <include name="openApp"/>
-          <include name="testA"/>
+          <include name="testInValidLogin"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- scripts.Demo -->
-      <class name="scripts.ValidLogin">
-        <methods>
-          <include name="openApp"/>
-          <include name="closeApp"/>
-          <include name="testValidLogin"/>
-        </methods>
-      </class> <!-- scripts.ValidLogin -->
+      </class> <!-- scripts.InvalidLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
