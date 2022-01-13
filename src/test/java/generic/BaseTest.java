@@ -14,9 +14,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -25,11 +30,24 @@ public class BaseTest implements IAutoConst{
 	public WebDriverWait wait;
 	public SoftAssert softAssert;
 	public String xlfile_path;
+	public static ExtentReports report;
 	static 
 	{
 		WebDriverManager.chromedriver().setup();
 		WebDriverManager.firefoxdriver().setup();
 	}
+	@BeforeSuite
+	public void initReport() {
+		report=new ExtentReports();
+		ExtentSparkReporter format=new ExtentSparkReporter(REPORT_PATH);
+		report.attachReporter(format);
+	}
+	
+	@AfterSuite
+	public void endReport() {
+		report.flush();
+	}
+	
 	
 	@Parameters({"xlfile","useGrid","hubURL","browser"})
 	@BeforeMethod(alwaysRun = true)
